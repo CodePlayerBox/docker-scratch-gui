@@ -1,0 +1,29 @@
+- name: Upload docker to rpi
+  synchronize:
+    src: ../docker/
+    dest: ~/CodePlayerBox/docker-scratch-gui/
+    rsync_opts:
+      - "--delete"
+      - "--exclude=.DS_Store"
+      - "--exclude=scratch-gui"
+      - "--exclude=script"
+      - "--exclude=node_modules"
+
+- name: Upload scratch-gui to rpi
+  synchronize:
+    src: ../code/scratch-gui/build/
+    dest: ~/CodePlayerBox/docker-scratch-gui/scratch-gui
+    rsync_opts:
+      - "--delete"
+      - "--exclude=.DS_Store"
+      - "--exclude=node_modules"
+      - "--exclude=dist"
+
+- name: Upload script to rpi
+  synchronize:
+    src: ../script/
+    dest: ~/CodePlayerBox/docker-scratch-gui/script
+    rsync_opts:
+      - "--delete"
+      - "--exclude=.DS_Store"
+

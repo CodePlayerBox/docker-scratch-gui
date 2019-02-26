@@ -1,0 +1,3 @@
+[submodule "code/scratch-gui"]
+	path = code/scratch-gui
+	url = https://github.com/LLK/scratch-gui.git
