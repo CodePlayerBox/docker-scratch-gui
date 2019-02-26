@@ -1,7 +1,8 @@
 - name: Create directories if needed
   file:
-   path:  ~/CodePlayerBox/docker-scratch-gui
+   path:  ~/CodePlayerBox/{{item}}
    #owner: user
    #group: user
    #mode: 0755
    state: directory
+  with_items: ["docker-scratch-gui", "docker-scratch-gui/code"]

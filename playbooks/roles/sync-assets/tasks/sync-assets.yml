@@ -5,14 +5,14 @@
     rsync_opts:
       - "--delete"
       - "--exclude=.DS_Store"
-      - "--exclude=scratch-gui"
+      - "--exclude=code"
       - "--exclude=script"
       - "--exclude=node_modules"
 
 - name: Upload scratch-gui to rpi
   synchronize:
     src: ../code/scratch-gui/build/
-    dest: ~/CodePlayerBox/docker-scratch-gui/scratch-gui
+    dest: ~/CodePlayerBox/docker-scratch-gui/code/scratch-gui
     rsync_opts:
       - "--delete"
       - "--exclude=.DS_Store"
