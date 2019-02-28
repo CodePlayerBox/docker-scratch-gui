@@ -1,6 +1,6 @@
 version: '3'
 
 services:
-  scratch-gui:
-    image: "scratch-gui"
+  docker-scratch-gui:
+    image: "docker-scratch-gui"
     build: .

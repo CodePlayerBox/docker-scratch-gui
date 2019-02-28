@@ -1,6 +1,13 @@
 # docker-scratch-gui
 Docker container for Scratch GUI
 
+## 检出代码
+在开发主机上执行下面的git复制代码
+```
+git clone --recursive https://github.com/CodePlayerBox/docker-scratch-gui.git
+```
+
+
 ## 构建运行
 
 1. 在开发主机上，通过Ansible将代码同步到树莓派上

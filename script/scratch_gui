@@ -21,8 +21,8 @@ GREEN='\e[0;32m'
 BLUE='\e[0;34m'
 NC='\e[0m'
 
-DOCKER_NAME="scratch-gui"
-DOCKER_IMAGE="scratch-gui"
+DOCKER_NAME="docker-scratch-gui"
+DOCKER_IMAGE="docker-scratch-gui"
 ARCH=$(arch)
 PORT=8016
 
