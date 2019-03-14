@@ -4,4 +4,4 @@
   roles:
     - { role: build-scratch }
     - { role: sync-assets }
-    #- { role: run-scratch-docker }
+    - { role: run-docker }
